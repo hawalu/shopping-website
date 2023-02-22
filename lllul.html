@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link rel="stylesheet" href="lllul.css">
+        <title>hawa bondora</title>
+    </head>
+    <body>
+       
+       
+         <button type="button"class="toggle-btn" onclick="REGISTRATION()">REGISTRATION</button>&emsp; 
+         <button type="button" class="toggle-btn" onclick="LOGIN()">LOGIN</button><BR>
+    
+       <form id="REGISTRATION" class="input-group">
+        
+
+        <label for="fname">First Name</label>
+        <input required type="text" class="input-field" id="fname" name="fname"><br>
+<br>
+        <label for="sname">Second Name</label>
+        <input required type="text" class="input-field" id="sname" name="sname"><br>
+        <br>
+        <label for="email">Email</label>
+        <input required type="email" class="input-field" id="eail" name="email"><br>
+<br>
+        <label for="password">Password</label>
+        <input required type="password" class="input-field" id="password" name="password"><br>
+<br>
+        <input type="submit" class="submit-btn" value="REGISTRATION">
+        <input type="checkbox" class="check-box"><span>remember password</span>
+        </form><br>
+<form id="LOGIN" class="input-group">
+    <label for="fname">First Name</label>
+    <input required type="text" class="input-field" id="fname" name="fname"><br>
+<br>
+    <label for="password">Password</label>
+    <input required type="password" class="input-field" id="password" name="password"><br>
+<br>
+    <label for="password">Confirm Password</label>
+    <input required type="password" class="input-field" id="confirm password" name="confirm password"><br>
+<br>
+    <input type="submit" class="submit-btn" value="LOGIN"> 
+
+</form>
+
+        
+
+ <script>
+    var x = document.getElementById("LOGIN");
+    var y = document.getElementById("REGISTRATION");
+    var z = document.getElementById("btn");
+
+    function REGISTRATION(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110";
+    }
+    function LOGIN(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+    }
+ </script>     
+    </body>
+</html>
